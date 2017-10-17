@@ -48,8 +48,6 @@ if(last_name.toUpperCase() == "MLLFOY")
     family_name_assigned_to = "Slytherin";
 }
 
-
-
 // output
 
 console.log(`The user is assigned to: ${the_user_is_assigned_to}`);
