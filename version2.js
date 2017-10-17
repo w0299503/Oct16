@@ -1,23 +1,30 @@
 /**
  * Created by w0299503 on 10/16/2017.
  */
-
+"use strict";
 var readlineSync = require('readline-sync');
-var last_name = parseInt(readlineSync.question('Enter the name of the family: '));
 
+// variables and input
+
+var random_number = parseInt(readlineSync.question('pick_random_number: '));
+var the_user_is_assigned_to;
+var last_name =readlineSync.question('Enter the name of the family: ');
+var family_name_assigned_to;
 
 // processing:
 
-if (last_name == Potter)
+random_number = Math.floor(Math.random() * (5 - 1 + 1)) + 1;
+
+if (random_number == 1)
 {
 
     the_user_is_assigned_to = "Gryffindor";
 
 
 }
-else if(last_name == Mllfoy)
+else if(random_number == 2)
 {
-    the_user_is_assigned_to = "Slytherin";
+    the_user_is_assigned_to = "Hufflepuff";
 }
 else if(random_number == 3)
 {
@@ -28,6 +35,20 @@ else
     the_user_is_assigned_to = "Slytherin";
 }
 
+if (last_name.toUpperCase() == "POTTER")
+{
+
+    family_name_assigned_to = "Gryffindor";
+
+
+}
+if(last_name.toUpperCase() == "MLLFOY")
+{
+    family_name_assigned_to = "Slytherin";
+}
+
 // output
 
 console.log(`The user is assigned to: ${the_user_is_assigned_to}`);
+console.log(`The family name is assigned to: ${family_name_assigned_to}`);
+
